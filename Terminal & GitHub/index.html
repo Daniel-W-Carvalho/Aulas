@@ -1,0 +1,125 @@
+<!--
+	UP - Volta um comando
+	DOWN - Avança um comando
+	TAB - autocompleta o nome do arquivo ou pasta
+
+	CTRL
+	A - Vai para o inicio da Linha
+	E - Vai pro fim da linha
+	Seta laterais - pula uma palavra
+
+	Comando
+	Clear - limpar terminal
+	CD entrar nas pastas
+	cd .. - Sair da pasta 
+-->
+
+
+<!--
+	                         GITHUB
+		Tracked - é quando o arquivo ja é conhecido pelo gif, e ele pode ser unmodified, modified , staged.
+		
+		Untracked - quando o arquivo ainda não é conhecido pelo git
+
+		img do ciclo > https://prnt.sc/_GsHFfNvv-hB
+
+		        CRIANDO REPOSITORIO GITHUB DENTRO DA PASTA
+			
+		Clicar com GitBash here dentro da pasta desejada e digitar
+		comando (git init), Repositorio adicionado na pasta!
+		GIT INIT = Comando para criar repositório git dentro da pasta
+
+		Logo em seguida trocar o nome da branch (MASTER) que vem por padrão
+		Para trocar só digitar comando (git branch -M main)
+		Main = nome do nosso novo brench
+
+		Próximo passo, linkar repositório local com repositório remoto.
+		Da nossa pasta para o github
+		Ir no github, dentro do Repositorio criado e pegar o link em cima, sempre usar o HTTPS, voltar no gitbash e colocar o comando (GIT REMOTE AND ORIGIN) e em seguida o link copiado do site github, ficando assim;
+
+		git remote and origin https://github.com/Daniel-W-Carvalho/Aulas.git
+
+		Ou simplesmente pegar no repositorio criado o comando + link
+
+		Para verificar se deu tudo certo até o momento, só utilizar o comando;
+		git remote -v
+
+		Comando para mostrar o estado atual do git dentro da pasta;
+		git status
+
+		Untracked - Status inicial, não versionamos ainda
+
+		Para adicionar o arquvio para começar a ser monitorado ou ser tracked;
+		git add index.html
+		INDEX.HTML (nome do nosso arquivo, mas pode ser outro)
+
+		pode dar o 
+		git status 
+		para verificar se realmente trocou o status para (changes to be committed), ficando da cor verde.
+
+		Status STTAGED - Pronto para ser commitado
+
+		Para committar;
+		git commit -m "Mensagem do que você fez" 
+		Exemplo;
+		git commit -m "Adicionado o arquivo index.html"
+
+		Depois só dar um
+		git status
+		E verificar se não há mais nada para ser commitado
+		"Nothing to commit, working tree clean"
+
+		                      DEPOIS DE TER FEITO MODIFICAÇÕES DO ARQUIVO
+		
+	 	Depois de ter feito alguma modificação no VSCODE no arquivo que ja estava comitado...
+		Ir no gitbash here e dar o comando;
+		git status
+
+		MODIFIED - Arquivo foi modificado
+
+		Para acrescentar as modificações dar o comando;
+
+		git add .    
+
+		(o ponto adiciona todos os arquivos e não somente o arquivo que colocarmos o nome, igual feito anteriormente... "git add index.html")
+
+		Depois dar;
+		git status
+
+		e ver que eles esta modified em verde! Pronto para ser comitado novamente
+
+		usando;
+
+		git commit -m "Colocar uma mensagem bem descritiva do que foi modificado"
+
+		exemplo;
+		git commit -m "Troquei o elemento calça jeans para bermuda"
+
+		Depois por fim dar o;
+		git status 
+		e ver que não tem nada para comitar.
+
+		E por fim, passo final; 
+
+								GIT PUSH
+		
+		git push seria empurrar a modificação localmente para o github
+		vamos usar o comando no gitbash;
+
+		git push -u origin main
+
+		vai abrir uma caixinha de autenticação do github
+
+		tem que autenticar com sua conta github! 
+
+		Nas vezes seguintes voce pode somenter dar o;
+		git push
+		
+
+
+
+
+
+
+
+-->

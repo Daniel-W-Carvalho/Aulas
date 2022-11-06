@@ -1,0 +1,5 @@
+.pixel {
+	background-color: aqua;
+	width: 1000px; /*Evitar de usar medidas setadas na mão (absolutas), reponsive vai prejudicar. Usar pixel em medidas absolutas e EM como medida relativa */
+	height: 100px;
+}

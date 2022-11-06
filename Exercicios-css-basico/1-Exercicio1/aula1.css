@@ -1,0 +1,12 @@
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	text-align: center;
+	background-color: aquamarine;
+}
+
+.total {
+	background-color: rgba(224, 1, 1, 0.3)
+}

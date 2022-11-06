@@ -1,0 +1,22 @@
+html {
+	background-color: rgb(163, 152, 152);
+}
+
+/* 1 em = 16pixels */
+
+body {
+	background-color: blueviolet;
+	width: 50%;
+	font-size: 2em;
+}
+
+.pai {
+   background-color: #eaB0fc;
+   width: 50%;
+}
+
+.filha {
+   background-color: aqua;
+   width: 50%;
+}
+

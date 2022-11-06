@@ -1,0 +1,19 @@
+div {
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	border: 10px solid green;
+}
+
+.com-border-box {
+	background-color: aquamarine;  /* Tira todas as config vindo de base, recomendavel mt a usar */
+	box-sizing: border-box;
+}
+
+.sem-border-box {
+	background-color: brown
+}
+
+/* largura + padding esq + padding dir + border esq + border dir = largura total do elemento */
+
+/* altura + padding cima + padding baixo + border cima + border baixo = altura total do elemento */

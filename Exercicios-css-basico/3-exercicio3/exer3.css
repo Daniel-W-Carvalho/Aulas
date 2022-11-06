@@ -1,0 +1,16 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.primeiro-paragrafo {
+	margin: 40px;
+	padding: 20px;
+	background-color: #f5f5f5;
+}
+
+.segundo-paragrafo {
+	margin: 40px;
+	padding: 20px;
+	background-color: #f0cce2;
+}

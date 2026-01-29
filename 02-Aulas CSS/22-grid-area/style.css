@@ -1,0 +1,58 @@
+.laranja {
+  background-color: #b25954;
+}
+
+.marrom {
+  background-color: #766a67;
+}
+
+.verde-claro {
+  background-color: #309c8b;
+}
+
+.verde-escuro {
+  background-color: #35636c;
+}
+
+.azul {
+  background-color: #43abc0;
+}
+
+.rosa {
+  background-color: #c55ba3;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 15px;
+}
+
+.verde-claro {
+  grid-area: 1 / 1 / 3 / 3;
+  /* 1 = linha inicial (row-start)
+  1 = coluna inicial (column-start)
+  1 = linha final (row-end)
+  3 = coluna final (column-end)*/
+}
+
+.azul {
+  grid-area: 1 / 3 / 1 / 6 ;
+}
+
+.rosa {
+  grid-area: 3 / 1 / 3 / span 2;
+}
+
+.laranja {
+  grid-area: 2 / 3 / 4 / 5;
+}
+
+.verde-escuro {
+  grid-area: 2 / 5 / 2 / 5;
+}
+
+.marrom {
+  grid-area: 3 / 5 / 3 / 5;
+}

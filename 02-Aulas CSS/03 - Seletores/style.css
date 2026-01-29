@@ -1,0 +1,88 @@
+/* 1 - Seletores básicos*/
+
+/* Tipo: Seleciona pelo nome da tag */
+
+p {
+    color: blue;
+}
+
+/*2 - Classe (.nome): Seleciona elementos que possuem uma classe específica*/
+
+.destaque {
+    font-weight: bold;
+    color: red;
+}
+
+/*3 - ID (#nome): seleciona um único elemento com o atributo id.*/
+
+#especial { 
+    background-color: yellow;
+}
+
+/*4 - Seletores de agrupamento: Permitem aplicar a mesma regra a varios seletores*/
+h1, h2, h3 { 
+    font-family: Arial, sans-serif;
+    color: rgb(125, 41, 223);
+}
+
+/*5 - Seletores de descendencia e relacionamento descendente*/
+
+div p { /*apenas paragrafos dentro de div*/ 
+    color: rgb(30, 226, 12);
+}
+
+/*6 - Filho direto (>)*/
+
+div > p { /*apenas paragrafos filhos diretos de div*/
+    color: rgb(233, 14, 178);
+}
+
+/*7 - Seletor adjacente (+) (logo após) */
+
+h2 + p { /*apenas o primeiro paragrafo após h2*/
+    margin-top: 0;
+    color: rgb(0, 255, 242);
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/*8 - Irmão geral (~) todos os elementos após outro*/
+
+h1 ~ p { /*todos os paragrafos após h1*/
+    border: 1px solid black;
+}
+
+/*9 - Seletores de atributo, baseados em atributo HTML*/
+a[target="_blank"] { /*todos os links*/
+    color: orange;
+}
+
+input[type="text"] { /*todos os inputs de texto*/
+    border: 2px solid blue;
+}
+
+input[type="password"] { /*todos os inputs de senha*/
+    border: 2px solid rgb(0, 238, 255);
+}
+
+/*10 - Pseudo-Classes selecionam estados ou condições especiais*/
+a:hover { /*links quando o mouse estiver sobre*/
+    color: red;
+    text-decoration: underline;
+}
+
+p:first-child { /*primeiro paragrafo dentro de um elemento pai*/
+    font-size: 3.5em;
+    }
+
+li:first-child { /*primeiro item de lista*/
+    font-weight: bold;
+    color: green;}    
+
+/*11 - Pseudo-Elementos estilizam partes específicas de um elemento*/ 
+
+p::first-letter { /*primeira letra do paragrafo*/
+    font-size: 200%;
+    color: green;
+    font-weight: bold;
+}

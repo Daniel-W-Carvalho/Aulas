@@ -1,0 +1,44 @@
+.container div{
+  border: 1px solid black;
+  color: white;
+  font-size: 20px;
+  background-color: blueviolet;
+}
+
+/* A propriedade grid-template-columns define o número e o tamanho das colunas em um container com display: grid. */
+
+/* No grid-template-columns, você pode usar várias unidades para definir o tamanho das colunas:
+
+fr (fração do espaço disponível)
+auto (tamanho automático conforme o conteúdo)
+px (pixels)
+em/rem (relativo ao tamanho da fonte)
+% (porcentagem do container)
+vw/vh (viewport width/height)
+min-content (tamanho mínimo do conteúdo)
+max-content (tamanho máximo do conteúdo)
+fit-content(valor) (ajusta até um valor máximo)
+repeat() (função para repetir padrões)
+minmax(min, max) (define um intervalo de tamanho) */
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 3fr;
+  grid-template-rows: 200px 100px;
+}
+
+/* A propriedade grid-template-rows define o número e o tamanho das linhas em um container com display: grid, assim como grid-template-columns faz para as colunas.
+
+Você pode usar as mesmas unidades de medida:
+
+fr (fração do espaço disponível)
+auto (tamanho automático conforme o conteúdo)
+px (pixels)
+em/rem (relativo ao tamanho da fonte)
+% (porcentagem do container)
+vw/vh (viewport width/height)
+min-content (tamanho mínimo do conteúdo)
+max-content (tamanho máximo do conteúdo)
+fit-content(valor) (ajusta até um valor máximo)
+repeat() (função para repetir padrões)
+minmax(min, max) (define um intervalo de tamanho) */

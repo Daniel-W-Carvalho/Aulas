@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1rem; /*1 rem é igual a 16px*/
+}
+
+main {
+    width: 1024px;
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 20px;
+    background-color: aqua;
+}
+
+ul {
+    font-size: 40px;
+}
+
+li{
+    font-size: 1em;
+}
+

@@ -1,0 +1,21 @@
+.container div {
+  border: 1px solid black;
+  background-color: blueviolet;
+  color: white;
+}
+
+.container {
+  display: grid;
+  /* grid-template-columns: minmax(100px, 800px) minmax(150px, 1fr) minmax(200px, 1fr); */
+
+  /*A primeira coluna terá largura mínima de 100px e máxima de 800px.
+  A segunda coluna terá largura mínima de 150px e máxima de 1fr (ou seja, ocupará o espaço restante do grid, mas nunca ficará menor que 150px).
+  A terceira coluna terá largura minima de 200px e máxima de 1fr (ou seja, ocupará o espaço restante do grid, mas nunca ficará menor que 200px).
+  Isso garante que o layout seja flexível, mas com limites mínimos e máximos para cada coluna.*/
+
+
+
+
+  /* Melhor jeito de usar o minmax */
+  grid-template-columns: repeat(3, minmax(150px, 300px)); /* 3 colunas com largura mínima de 150px e máxima de 300px */
+}

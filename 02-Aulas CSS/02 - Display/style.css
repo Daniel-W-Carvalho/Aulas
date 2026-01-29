@@ -1,0 +1,23 @@
+span {
+    display: inline;
+    width: 200px;   /*ELE NÃO ACEITA LARGURA OU ALTURA*/
+    height: 200px;
+    background-color: rgb(108, 91, 255);
+    color: rgb(255, 255, 255);
+}
+
+div p{
+    display: block;
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+    width: 200px; /*ELE ACEITA LARGURA OU ALTURA*/
+    height: 200px;
+}
+
+section p {
+    display: inline-block;
+    background-color: rgb(255, 0, 238);
+    color: rgb(0, 0, 0); 
+    width: 200px;  /*ELE ACEITA LARGURA OU ALTURA E AINDA SE COMPORTA COMO INLINE*/
+    height: 200px;
+}

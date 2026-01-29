@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.cabecalho {
+  background-color: #ff8200;
+  grid-area: cabecalho;
+}
+
+.menu {
+  background-color: #7fc78e;
+  grid-area: menu;
+}
+
+.secao-principal {
+  background-color: #ffa9c0;
+  grid-area: secao-principal;
+}
+
+.aside {
+  background-color: #ffe200;
+  grid-area: aside;
+}
+
+.rodape {
+  background-color: #f48d76;
+  grid-area: rodape;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "cabecalho cabecalho cabecalho"
+                       "menu secao-principal aside"
+                       "rodape rodape rodape";
+  grid-template-columns: 50px auto 150px;
+  grid-template-rows: 100px 200px 50px;
+}

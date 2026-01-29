@@ -1,0 +1,27 @@
+.container div{
+  border: 1px solid black;
+  color: white;
+  font-size: 20px;
+  background-color: blueviolet;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  
+  /* 4 colunas com tamanho igual de 1 fração */
+  
+  grid-template-rows: repeat(2, 100px);  
+  /* 2 linhas com altura de 150px cada, caso você colocar 3 linhas e ele não criar a terceira linha, é porque não tem conteúdo suficiente para ser criada a terceira linha */
+
+  /*Abreviação dos comandos acima*/
+  /* grid-template: repeat(2, 100px) / repeat(4, 1fr); */
+  /*Neste caso, a linha vem primeiro e depois a coluna*/
+
+
+
+  /* column-gap: 20px;  */ /* Espaçamento entre as colunas */
+  /* row-gap: 10px; */ /* Espaçamento entre as linhas */
+
+  /* Abreviação dos comandos acima: */
+  gap: 20px 50px; /* Espaçamento entre linhas e colunas, primeiro valor é o row-gap e o segundo é o column-gap */
+}

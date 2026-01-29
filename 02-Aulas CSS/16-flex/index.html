@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- A propriedade flex é um atalho para três propriedades individuais do
+    Flexbox: 
+    flex-grow (crescimento) 
+    flex-shrink (encolhimento) 
+    flex-basis(tamanho base) 
+    
+    A ordem é sempre: flex: 
+    [flex-grow] 
+    [flex-shrink]
+    [flex-basis]; 
+    
+    Valores padrão: 
+    flex-grow: 0 (não cresce)
+    flex-shrink: 1 (pode encolher) 
+    flex-basis: auto (tamanho do conteúdo) 
+    
+    Exemplos: flex: 1 0 150px;
+    Cresce (1), não encolhe (0), tamanho base 150px. 
+    
+    flex: 0 1 auto; 
+    Não cresce (0), pode encolher (1), tamanho base automático. 
+    
+    Se você usar só um valor, tipo flex: 1;, ele vira flex: 1 1 0%. -->
+    
+    <h1>Flex Item: Flex</h1>
+    <div class="container">
+      <div class="flex-0">Lorem ipsum.</div>
+      <div class="flex-0">Lorem ipsum dolor</div>
+      <div class="flex-0">Lorem ipsum dolor</div>
+    </div>
+  </body>
+</html>

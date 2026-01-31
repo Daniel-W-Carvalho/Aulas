@@ -6,13 +6,31 @@ const listas = document.getElementById('lista-itens');
 
 
 botaoAdicionar.addEventListener('click', () => {
-    const item = document.createElement('li')
 
-    item.dataset.categoria = select.value
-    item.textContent = input.value
-    listas.appendChild(item);
-    input.value = ""; // Limpa o campo
-    input.focus();    // Coloca o cursor lá de novo
+    const textoDigitado = input.value.trim();
+
+    if(textoDigitado !== ''){
+        const item = document.createElement('li')
+        item.textContent = input.value
+        item.dataset.categoria = select.value
+        item.style.listStyle = "none";
+
+        const btnExcluir = document.createElement('button')
+        btnExcluir.textContent = 'X'
+        btnExcluir.style.marginLeft = "10px";
+
+        btnExcluir.addEventListener('click', (event) => {
+        event.target.parentElement.remove()
+    })
+
+        item.appendChild(btnExcluir)
+        listas.appendChild(item);
+        input.value = ""; // Limpa o campo
+        input.focus();    // Coloca o cursor lá de novo
+
+    }else{
+        alert("Por favor digite o nome de uma fruta ou legumes")
+    }
 });
 
 botaoFiltro.forEach(botao => {
@@ -20,9 +38,10 @@ botaoFiltro.forEach(botao => {
         const botaoClicado = event.target
 
         const itensCriados = document.querySelectorAll('li')
+
+        const valordoBotao = botaoClicado.dataset.categoria
         
         itensCriados.forEach(itens => {
-            const valordoBotao = botaoClicado.dataset.categoria
             const valorItem = itens.dataset.categoria
 
             if(valordoBotao === valorItem || valordoBotao === 'todos'){

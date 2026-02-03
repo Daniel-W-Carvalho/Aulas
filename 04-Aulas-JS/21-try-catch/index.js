@@ -3,7 +3,7 @@ const orderPizza = async (hasIngredients) => { // variavel que recebe uma funç�
         console.log("Pedido da pizza enviado para a cozinha..."); //avisando que entrou na função e o pedido foi enviado p cozinha
     //lançando um erro proposital
         if (!hasIngredients){  // se não tiver ingrediente...                       
-            throw new Error ("Não temos ingredientes...") // lança o erro, não temos ingrediente e encerra todo o processamento seguinte e ja cai no finally
+            throw new Error ("Não temos ingredientes...") // lança o erro, não temos ingrediente e encerra todo o processamento seguinte e ja cai no catch
         }
         //mas caso tenha o ingrediente
         await new Promise((resolve, reject) => { // espera e cria uma nova promessa que pode ser resolvida ou rejeitada
@@ -21,6 +21,36 @@ const orderPizza = async (hasIngredients) => { // variavel que recebe uma funç�
 
         return "Pizza pronta" //retorno do throw, caso tenha ingrediente ele retorna e faz o await da linha 9
 };
+
+//SIMULANDO CÓDIGO ACIMA MAS DO JEITO PROFISSIONAL
+// 2 - Criando a pizza (Versão Otimizada)
+// const orderPizza = async (hasIngredients) => {
+//     console.log("Pedido enviado para a cozinha...");
+
+//     if (!hasIngredients) {
+//         throw new Error("Não temos ingredientes...");
+//     }
+
+//     // CAPTURANDO O VALOR: Criamos uma variável para guardar o que o resolve mandar
+//     const resultadoDaCozinha = await new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const hasErrors = Math.random() < 0.1;
+//             if (hasErrors) {
+//                 reject("A pizza queimou!");
+//             } else {
+//                 // Passamos um OBJETO para simular um JSON de API
+//                 resolve({
+//                     status: "Pronta",
+//                     sabor: "Marguerita",
+//                     preco: 45.90
+//                 });
+//             }
+//         }, 3000);
+//     });
+
+//     // Agora retornamos o que a Promise nos deu
+//     return resultadoDaCozinha; 
+// };
 
 
 

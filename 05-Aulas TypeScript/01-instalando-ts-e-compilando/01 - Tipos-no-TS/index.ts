@@ -27,3 +27,7 @@ function imprimirCoordenadas(pt: { x: number; y: number }) {
  console.log("The coordinate's y value is " + pt.y);
 }
 imprimirCoordenadas({ x: 3, y: 7 });
+
+
+//Tuple
+// Tuplas são usadas apenas quando a ordem e a quantidade são fixas (como uma coordenada [latitude, longitude]).

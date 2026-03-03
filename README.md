@@ -9,7 +9,7 @@ Neste repositório são adicionados frequentemente arquivos de aulas, anotaçõe
 - CSS ✔
 - JS ✔
 - React 💬
-- TypeScript
+- TypeScript ✔
 - NodeJS
 - SQL
 - Express

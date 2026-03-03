@@ -1,10 +1,12 @@
 import "./App.css"
-import MyFirstClassComponent from "./02-Components/componentClass.tsx";
+import ConteudoCard from "./04-Atividade/conteudoCard"
 
 function App() {
-    return <>
-        <MyFirstClassComponent />
+    return (
+    <>
+        <ConteudoCard />
     </>
+  )
 }
 
 export default App;

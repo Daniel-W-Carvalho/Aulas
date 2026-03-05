@@ -1,10 +1,10 @@
+import Contador from "./07-Hooks-useState/useState";
 import "./App.css"
-import ConteudoCard from "./04-Atividade/conteudoCard"
 
 function App() {
     return (
     <>
-        <ConteudoCard />
+        <Contador></Contador>
     </>
   )
 }

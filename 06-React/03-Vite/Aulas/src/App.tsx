@@ -1,10 +1,10 @@
-import Contador from "./07-Hooks-useState/useState";
+import MyClique from "./09-Eventos/eventos";
 import "./App.css"
 
 function App() {
     return (
     <>
-        <Contador></Contador>
+        <MyClique />
     </>
   )
 }

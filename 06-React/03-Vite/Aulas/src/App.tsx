@@ -1,10 +1,10 @@
-import MyClique from "./09-Eventos/eventos";
+import { Formulario } from "./09-Eventos/exercicio";
 import "./App.css"
 
 function App() {
     return (
     <>
-        <MyClique />
+        <Formulario />
     </>
   )
 }

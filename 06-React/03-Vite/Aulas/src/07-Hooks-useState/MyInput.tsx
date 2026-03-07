@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export default function MyInput() {
-  const [text, setText] = useState<string>('Valor inicial');
+  const [text, setText] = useState<string>('');
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     setText(e.target.value);
@@ -14,6 +14,7 @@ export default function MyInput() {
       <button onClick={() => setText('Valor depois que clicar no reset')}>
         Reset
       </button>
+      <p>{text}</p>
     </>
   );
 }
